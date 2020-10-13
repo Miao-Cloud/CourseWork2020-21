@@ -5,7 +5,7 @@
 Hello there, here is a simple tutorial on how to create a health/life counter.
 
 1. Firstly insert a heart asset which will act as your health or lives. For now there will be 3
--Once they are in your assets folder, drag them into your scene.
+   Once they are in your assets folder, drag them into your scene.
 ⋅⋅⋅Place them where you wish to have them viewable in game.⋅⋅
 ⋅⋅⋅Rename each heart to: heart1 heart2 heart3. This is to make it easier to differentiate between the 3.⋅⋅
 
