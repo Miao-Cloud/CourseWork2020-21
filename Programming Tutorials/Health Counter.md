@@ -61,6 +61,7 @@ Give the player object a rigidbody, set the gravity to 0 and collision detection
     public class MovementScript : MonoBehaviour
 
 {
+
     public float speed = 10f;
     void Start()
     {
