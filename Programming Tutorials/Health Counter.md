@@ -4,6 +4,8 @@
 
 Hello there, here is a simple tutorial on how to create a health/life counter.
 
+---
+
 1. Firstly insert a heart asset which will act as your health or lives. For now there will be 3.
 
 Once they are in your assets folder, drag them into your scene.
@@ -81,16 +83,25 @@ Give the player object a rigidbody, set the gravity to 0 and collision detection
     }
 }
 
-..*The public float speed will set the base speed of the player to 10.
-..*The if statments mean that when the left key is pressed, the character will move left at the speed of 10. Same goes for the right key.
+The public float speed will set the base speed of the player to 10.
+
+The if statments mean that when the left key is pressed, the character will move left at the speed of 10. Same goes for the right key.
+
+---
 
 ### Now that all the set up is complete, the long tedious part begins. The part of making the hearts increase and decrease. So! Here goes nothing.
 
+---
+
 6. Create a text object and write in Game Over in the text box, edit as you wish then name the conponent GameOverText.
-..*Drag the text wherever you wish on your scene.
+
+Drag the text wherever you wish on your scene.
+
+---
 
 7. Create an empty game object and name it GameControl.
-..*Give this object a script called GameControlScript. Once it's open, write in the following.
+
+Give this object a script called GameControlScript. Once it's open, write in the following.
 
 public class GameControlScript : MonoBehaviour
 
@@ -143,15 +154,21 @@ public class GameControlScript : MonoBehaviour
     }
 }
 
-..*What this block of code does is count the amount of hearts active, when none are left the game over text will be displayed and further movements stopped.
+What this block of code does is count the amount of hearts active, when none are left the game over text will be displayed and further movements stopped.
+
+---
 
 8. Now click on the GameControl object and drag the required objects into the slots that show up under the inspector.
-..*These are now here thanks to the giant block of code.
+
+These are now here thanks to the giant block of code.
+
+---
 
 9. Hit play and see how it runs.
-..*Remember to save everything as you go along.
 
+Remember to save everything as you go along.
 
+---
 
 
 
