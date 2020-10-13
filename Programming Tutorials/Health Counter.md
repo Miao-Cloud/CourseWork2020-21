@@ -27,12 +27,13 @@ Give the player object a rigidbody, set the gravity to 0 and collision detection
 
 
 3. Give the health increase object a script called HeartScript. Once the script is open, delete anything inside the public class {} and replace it with the following:
+     
      void OnTriggerEnter2D (Collider2D col)
     {
             GameControlScript.health += 1;
     }
     
-    ..*This means when something, the player, collides with it the health count will increase by 1.
+    This means when something, the player, collides with it the health count will increase by 1.
     
 4. Give the health decrease object a script called DeathScript. Once the script is open, delete anything inside the public class {} and replace it with the following:
 ..*  void OnTriggerEnter2D (Collider2D col)
