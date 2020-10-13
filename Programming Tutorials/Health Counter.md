@@ -12,7 +12,7 @@ Place them where you wish to have them viewable in game.
 
 Rename each heart to: heart1 heart2 heart3. This is to make it easier to differentiate between the 3.
 
-
+---
 
 2. Now to test the code after it is complete, there will be a health increasing zone and decreasing zone.
 
@@ -24,7 +24,7 @@ Give all the increase and decrease objects a box collider which activates on tri
 
 Give the player object a rigidbody, set the gravity to 0 and collision detection to continous. This is so the object doesn't fall and is always looking for colliders.
 
-
+---
 
 3. Give the health increase object a script called HeartScript. Once the script is open, delete anything inside the public class {} and replace it with the following:
      
@@ -39,13 +39,20 @@ Give the player object a rigidbody, set the gravity to 0 and collision detection
     
     This means when something, the player, collides with it the health count will increase by 1.
     
+    ---
+    
 4. Give the health decrease object a script called DeathScript. Once the script is open, delete anything inside the public class {} and replace it with the following:
-..*  void OnTriggerEnter2D (Collider2D col)
+     
+     void OnTriggerEnter2D (Collider2D col)
+     
     {
+    
             GameControlScript.health -= 1;
+            
     }    
     
-    ..*This means when something, the player, collides with it the health count will decrease by 1.
+    
+    This means when something, the player, collides with it the health count will decrease by 1.
     
 5. Now the player will need a movement script. Give the player object the script, name it MovementScript. Open it and insert the following:
 
