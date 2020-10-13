@@ -106,6 +106,7 @@ Give this object a script called GameControlScript. Once it's open, write in the
 public class GameControlScript : MonoBehaviour
 
 {
+
     public GameObject heart1, heart2, heart3, gameOver;
     public static int health;
 
