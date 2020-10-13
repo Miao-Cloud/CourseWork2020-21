@@ -39,7 +39,7 @@ Give the player object a rigidbody, set the gravity to 0 and collision detection
     
     This means when something, the player, collides with it the health count will increase by 1.
     
-    ---
+---
     
 4. Give the health decrease object a script called DeathScript. Once the script is open, delete anything inside the public class {} and replace it with the following:
      
@@ -54,9 +54,11 @@ Give the player object a rigidbody, set the gravity to 0 and collision detection
     
     This means when something, the player, collides with it the health count will decrease by 1.
     
+---
+    
 5. Now the player will need a movement script. Give the player object the script, name it MovementScript. Open it and insert the following:
-
-..* public class MovementScript : MonoBehaviour
+    
+    public class MovementScript : MonoBehaviour
 
 {
     public float speed = 10f;
