@@ -12,14 +12,22 @@ Place them where you wish to have them viewable in game.
 
 Rename each heart to: heart1 heart2 heart3. This is to make it easier to differentiate between the 3.
 
+
+
 2. Now to test the code after it is complete, there will be a health increasing zone and decreasing zone.
-..*Drag in the object which will increase and decrease the life count. Increase on the left. Decrease on the right.
-..*Drag in a simple player. Player will be inbetween the increase and decrease objects.
-..*Give all the increase and decrease objects a box collider which activates on trigger.
-..*Give the player object a rigidbody, set the gravity to 0 and collision detection to continous. This is so the object doesn't fall and is always looking for colliders.
+
+Drag in the object which will increase and decrease the life count. Increase on the left. Decrease on the right.
+
+Drag in a simple player. Player will be inbetween the increase and decrease objects.
+
+Give all the increase and decrease objects a box collider which activates on trigger.
+
+Give the player object a rigidbody, set the gravity to 0 and collision detection to continous. This is so the object doesn't fall and is always looking for colliders.
+
+
 
 3. Give the health increase object a script called HeartScript. Once the script is open, delete anything inside the public class {} and replace it with the following:
-..*  void OnTriggerEnter2D (Collider2D col)
+     void OnTriggerEnter2D (Collider2D col)
     {
             GameControlScript.health += 1;
     }
