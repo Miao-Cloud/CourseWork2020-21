@@ -25,3 +25,10 @@ public void Update()
     {
         
     }
+    
+---
+
+4. Now look back up to void Start. Here is where the dissapearing cursor script will go. Write up the following in void Start:
+
+        Cursor.visible = false;
+
