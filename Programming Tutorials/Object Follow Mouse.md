@@ -21,6 +21,7 @@ The script will also hide the cursor in game.
 3. Once the script is open, delete void update and replace it with the following:
 
 public void Update()
+
     {
         
     }
