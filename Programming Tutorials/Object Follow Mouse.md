@@ -41,6 +41,17 @@ This simple line grabs the cursor, checks its visibility and sets it to false. T
         Vector2 cursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         transform.position = new Vector2(cursorPos.x, cursorPos.y);
 
+The first line is finding the current position of the mouse from the main camera view.
+
+The second line is telling the object to constantly update its position according the the position of the mouse which is found from the first line.
+
+---
+
+6. Don't forget to hit save and test the script out. Now you should have an object that follows an invisible cursor.
+
+If you want the cursor to stay visible, you can delete the void Start section ofthe script and ignore step 4.
+
+---
 
 
 
