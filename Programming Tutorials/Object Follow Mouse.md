@@ -6,3 +6,4 @@ Hello! By the end of this tutorial, you should have an object that will follow y
 
 ---
 
+1. Once your project is open, drag in the sprite you wish to use into the assets folder.
