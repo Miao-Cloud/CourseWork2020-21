@@ -32,3 +32,18 @@ public void Update()
 
         Cursor.visible = false;
 
+This simple line grabs the cursor, checks its visibility and sets it to false. Turning it off.
+
+---
+
+5. Now onto the object following part. This is two simple lines in the newly made public void Update section. Write up the following:
+
+        Vector2 cursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        transform.position = new Vector2(cursorPos.x, cursorPos.y);
+
+
+
+
+
+
+
