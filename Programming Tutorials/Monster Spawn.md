@@ -37,9 +37,40 @@ This is where the enemy can spawn.
 
 ---
 
-4. Go back to the Random Enemy Spawner and give it a script named Spawner. Once open, write up the following.
+4. Go back to the Random Enemy Spawner and give it a script named Spawner. Once open, write up the following before void start.
 
+public Transform[] spawnPoints;
+publicGameObject[] enemyPrefabs;
 
+You can delete the void Start section.
+
+---
+
+5. Now in the void Update the following will make a random enemy spawn when the mouse is clicked.
+
+if (Input.GetMouseButtonDown(0))
+{
+int randEnemy = Random.Range(0, enemyPrefabs.Length);
+int randSpawPoint = Random.Range(0, spawnPoints.Length);
+
+Instantiate(enemyPrefabs[randEnemy], spawnPoints[randSpawPoints].position, transform.rotation);
+}
+
+This will make the enemies spawn randomly when the mouse button is clicked.
+
+---
+
+6. Select all the spawners in the hierachy and drag them over to the drop down menu in the inspector labled Spawn Points.
+
+---
+
+7. Then select all the enemy assets and drag them into the Enemy Prefabs menu which is under the Spawn Points menu.
+
+---
+
+8. Now you should have enemy spawning whenever you click the mouse button.
+
+Remember to save as you go.
 
 
 
